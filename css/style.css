@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Oregano:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+body{
+    background-color: rgb(249, 223, 190);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.barra-superior {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #800020;
+  padding: 15px 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Contenedor de los enlaces */
+.menu-navegacion {
+  display: flex;
+  gap: 30px; /* Espacio entre MENÚ y REWARDS */
+  align-items: center;
+}
+/* Estilo de las palabras MENÚ y REWARDS */
+.enlace-menu {
+  text-decoration: none;
+  color: #333333; /* Color oscuro para el texto */
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 1px; /* Separación entre letras */
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+h1,h2,h3,p{
+  text-align: center;
+}
+.t-especial{
+  font-family: 'Oregano', cursive;
+  color: #800020;
+}
+p{
+  font-size: 20px;
+  font-family: 'Fuzzy Bubbles';
+}
+.ubi{
+  width: 90%;
+  height: auto;
+  margin: 5% 5%;
+  border-radius: 15px;
+  background-color: burlywood;
+  padding: 5px;
+}
+/* Pagina Menu*/
+/*Productos*/
+.grid-productos {
+  display: flex;
+  flex-direction: row;      
+  flex-wrap: wrap;           
+  justify-content: center;  
+  gap: 2%; 
+  align-items: flex-start;
+  margin-top: 2%;
+  width: 100%;  
+}
+.tarjeta-producto {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;       
+  width: 30%;  
+  text-align: center;
+  cursor: pointer;
+}
+.imagen-producto {
+  width: 100%; 
+  height: auto;
+  object-fit: contain;  
+  transition: transform 0.2s ease;
+}
+.tarjeta-producto:hover .imagen-producto {
+  transform: scale(1.05);
+}
+.nombre-categoria {
+  font-family: 'Autor One', sans-serif;
+  font-size: 100%;
+  margin-top: 3%;
+}
+.lista{
+  font-size: 20px;
+  font-family: 'Chelsea Market', cursive, sans-serif;
+}
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 0 auto;         
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.img img {
+    width: 80%;
+    height: 1000px;
+}
+@media (max-width: 600px) {
+  .t-especial{
+    font-size: 35px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .ubi{
+    margin: 50px 5%;
+  }
+  .grid-productos {
+    gap: 8px;
+    padding: 0 5px;
+  }
+
+  .tarjeta-producto {
+    width: 45%; /* Círculos un poco más grandes manteniendo 3 por fila */
+  }
+  .nombre-categoria {
+    font-family: 'Autour One', sans-serif;
+    font-size: 11px;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+  .lista-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: 0 auto;
+    padding: 5px;     
+  }
+  .lista{
+  font-size: 14px;
+  font-family: 'Chelsea Market', cursive, sans-serif;
+  margin-left: 5px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .img img{
+    margin-top: 10px;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+  }
+}
